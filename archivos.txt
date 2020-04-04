@@ -1,0 +1,30 @@
+login.html                              [[ OK ]]
+registro.html                           [[ OK ]]
+verifica1.html                          [[ OK ]]
+verifica2.html                          [[ OK ]]
+home.html                               [[ Ok ]]
+listaProductos.html                     [[ OK ]]
+detalleProducto.html (+2 modales)       [[ OK ]]
+carroCompra.html                        [[ OK ]]
+pago.html                               [[]]
+perfil-coins.html                       [[]]
+perfil-pedidos.html                     [[]]
+perfil-favoritos.html                   [[]]
+perfil-misDatos.html                    [[]]
+perfil-direccion.html                   [[]]
+perfil-seguridad.html                   [[]]
+comprarPlanetaCoins1.html               [[]]
+comprarPlanetaCoins2.html               [[]]
+comprarPlanetaCoins3.html               [[]]
+blog.html                               [[]]
+blog-detalle.html                       [[]]
+
+NOTAS
+
+<button class="btn btn-facebook"> <i class="icon-facebook"></i>Iniciar con Facebook</button>
+<button class="btn btn-degraded mt-2"> Grabar Datos</button>
+<button class="btn btn-degraded2 mt-2"> Grabar Datos</button>
+<button class="btn btn-purple small mt-2"> COMPRAR</button>
+<button class="btn btn-purple mt-2">  COMPRAR</button>
+<button class="btn btn-blue mt-2"> Grabar Datos</button>
+<button class="btn btn-red mt-2"> Eliminar</button>
