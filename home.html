@@ -6,8 +6,13 @@
         <title>Planeta Ecommerce</title>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
         <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+        <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+        
+
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-light fixed-top  ">
@@ -32,11 +37,11 @@
                       <a href=""><i class="icon-store"></i></a>
                   </div>
                   <div class="iconBar">
-                      <a href=""><i class="icon-heart"></i>
+                      <a href="perfil-favoritos.html"><i class="icon-heart"></i>
                         <span class="counter">2</span></a>
                   </div>
                   <div class="iconBar">
-                      <a href=""><i class="icon-store2"></i>
+                      <a href="carroCompra.html"><i class="icon-store2"></i>
                         <span class="counter">6</span></a>
                   </div>
                   
@@ -49,25 +54,25 @@
                           <div class="separador"></div>
                         </li>
                         <li>
-                          <a href=""><i class="icon-store1"></i>Mis pedidos</a>
+                          <a href="perfil-pedidos.html"><i class="icon-store1"></i>Mis pedidos</a>
                         </li>
                         <li>
-                          <a href=""><i class="icon-coins"></i>Mis coins</a>
+                          <a href="perfil-coins.html"><i class="icon-coins"></i>Mis coins</a>
                         </li>
                         <li>
-                          <a href=""><i class="icon-star"></i>Mis favoritos</a>
+                          <a href="perfil-favoritos.html"><i class="icon-star"></i>Mis favoritos</a>
                         </li>
                         <li>
-                          <a href=""><i class="icon-profile"></i>Mis datos</a>
+                          <a href="perfil-misDatos.html"><i class="icon-profile"></i>Mis datos</a>
                         </li>
                         <li>
-                          <a href=""><i class="icon-address"></i>Mi dirección</a>
+                          <a href="perfil-direccion.html"><i class="icon-address"></i>Mi dirección</a>
                         </li>
                         <li>
-                          <a href=""><i class="icon-security"></i>Seguridad</a>
+                          <a href="perfil-seguridad.html"><i class="icon-security"></i>Seguridad</a>
                         </li>
-                        <li >
-                          <button class="btn btn-degraded mt-2 ">SALIR DE PLANETA</button>
+                        <li>
+                          <button onclick="location.href='login.html'" type="button" class="btn btn-degraded mt-2">SALIR DE PLANETA</button>
                         </li>
                       </ul>
                   </div>
@@ -110,7 +115,7 @@
                       <h3 class="blue"><strong>Lorem  dolor sit amet</strong></h4>
                       <h5>Consectetuer </br>edipiscing  elit doit</h5>
                       <p class="mt-1 ">Otoño / Invierno </p>
-                      <button class="btn btn-purple"> COMPRAR</button>
+                      <button onclick="location.href='listaProductos.html'" type="button" class="btn btn-purple"> COMPRAR</button>
                     </div>
                   </div>
                 </div>
@@ -126,7 +131,7 @@
                       <h3 class="blue"><strong>Lorem  dolor sit amet</strong></h4>
                       <h5>Consectetuer </br>adipiscing  elit doit</h5>
                       <p class="mt-1 ">Otoño / Invierno </p>
-                      <button class="btn btn-purple"> COMPRAR</button>
+                      <button class="btn btn-purple" onclick="location.href='listaProductos.html'" type="button"> COMPRAR</button>
                     </div>
                   </div>
                 </div>
@@ -142,7 +147,7 @@
                       <h3 class="blue"><strong>Lorem  dolor sit amet</strong></h4>
                       <h5>Consectetuer adipiscing </br>elit doit</h5>
                       <p class="mt-1 ">Otoño / Invierno </p>
-                      <button class="btn btn-purple"> COMPRAR</button>
+                      <button class="btn btn-purple" onclick="location.href='listaProductos.html'" type="button"> COMPRAR</button>
                     </div>
                   </div>
                 </div>
@@ -171,7 +176,7 @@
                             <h3 class="darkPurple"><strong>-20%</strong></h4>
                             <h5>En todo </br>  ropa de niño</h5>
                             <p class="mt-1 ">Otoño / Invierno </p>
-                            <button class="btn btn-purple small mt-2"> COMPRAR</button>
+                            <button onclick="location.href='listaProductos.html'" type="button" class="btn btn-purple small mt-2"> COMPRAR</button>
                           </div>
                         </div>
                       </div>
@@ -185,7 +190,7 @@
                             <h3 class="blue"><strong>-60%</strong></h4>
                             <h5 class="white">En todo </br> ropa de mujer</h5>
                             <p class="mt-1 ">Otoño / Invierno </p>
-                            <button class="btn btn-purple small mt-2"> COMPRAR</button>
+                            <button onclick="location.href='listaProductos.html'" type="button" class="btn btn-purple small mt-2"> COMPRAR</button>
                           </div>
                         </div>
                       </div>
@@ -200,7 +205,7 @@
                             <h3 class="blue"><strong>-70%</strong></h4>
                             <h5 class="">En todo ropa </br> de hombre</h5>
                             <p class="mt-1 ">Otoño / Invierno </p>
-                            <button class="btn btn-blue2 small"> COMPRAR</button>
+                            <button onclick="location.href='listaProductos.html'" type="button" class="btn btn-blue2 small"> COMPRAR</button>
                           </div>
                         </div>
                       </div>
@@ -214,7 +219,7 @@
                             <h3 class="darkPurple" ><strong>-30%</strong></h4>
                             <h5 class="white">En todo </br>  ropa de mujer</h5>
                             <p class="mt-1 ">Otoño / Invierno </p>
-                            <button class="btn btn-purple small mt-2"> COMPRAR</button>
+                            <button onclick="location.href='listaProductos.html'" type="button" class="btn btn-purple small mt-2"> COMPRAR</button>
                           </div>
                         </div>
                       </div>
@@ -535,7 +540,7 @@
                         </div>
                       </div>
                     </div>
-
+                    
                   </section>  
                 </div>
             </div>
@@ -543,6 +548,8 @@
 
         </div>
 
+        
+        
         <footer class="footer-area bg-black ">
           <!-- Footer Top Area -->
           <div class="footer-top-area">
@@ -612,7 +619,9 @@
           </div>
           <!--// Footer Copyright Area -->
         </footer>   
-
+        <!-- <script src="http://ajax.gxoogleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+        <script src="fancybox/jquery.fancybox.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
         <!-- <script src="js/vendor/jquery-3.3.1.min.js"></script> -->
         <script src="js/bootstrap.min.js" charset="utf-8"></script>

@@ -21,7 +21,7 @@
   }
   @font-face {
     font-family: 'Nunito';
-    src: url('../fonts/Nunito-bold.ttf') format('truetype');
+    src: url('../fonts/Nunito-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
   }
@@ -886,7 +886,7 @@ textarea:focus, input:focus{
 }
 
 .iconBar{
-  margin: 0px 10px;
+  margin: 6px 10px 0px 10px;
   position: relative;
   cursor: pointer;
   i{
@@ -920,7 +920,7 @@ textarea:focus, input:focus{
   }
 }
 .iconMenu{
-  margin: 0px 10px;
+  margin: 6px 10px 0px 10px;
   cursor: pointer;
   a{
     text-decoration: none;

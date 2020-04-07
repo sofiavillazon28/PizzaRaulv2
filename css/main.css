@@ -786,7 +786,7 @@ textarea:focus, input:focus {
     background-color: #563F99; }
 
 .iconBar {
-  margin: 0px 10px;
+  margin: 6px 10px 0px 10px;
   position: relative;
   cursor: pointer; }
   .iconBar i {
@@ -815,7 +815,7 @@ textarea:focus, input:focus {
     left: 23px; }
 
 .iconMenu {
-  margin: 0px 10px;
+  margin: 6px 10px 0px 10px;
   cursor: pointer; }
   .iconMenu a {
     text-decoration: none; }

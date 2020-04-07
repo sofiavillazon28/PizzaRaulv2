@@ -129,3 +129,11 @@ $('.hero-area').slick({
   prevArrow: '<span class="slider-navigation slider-navigation-prev"><i class="icon-arrow-left"></i></span>',
   nextArrow: '<span class="slider-navigation slider-navigation-next"><i class="icon-arrow-right"></i></span>',
 });
+
+// Slider
+
+$('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});
