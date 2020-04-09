@@ -130,10 +130,97 @@ $('.hero-area').slick({
   nextArrow: '<span class="slider-navigation slider-navigation-next"><i class="icon-arrow-right"></i></span>',
 });
 
-// Slider
 
-$('.main-carousel').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true
+
+/*==================================================*/
+/*2.-Accordion .....................................*/
+/*==================================================*/
+
+var accordionsClose = document.querySelectorAll('.collapse');
+for (var i = 0; i < accordionsClose.length; i++) {
+    accordionsClose[i].classList.add('show');
+}
+
+document.addEventListener('click', function (event) {
+    //Bail if our clicked element doesn't have the class
+    if (!event.target.classList.contains('accordion-toggle')) return;
+    
+    // Get the target content
+    var content = document.querySelector(event.target.hash);
+    if (!content) return;
+    
+    // Prevent default link behavior
+    event.preventDefault();
+    
+    // If the content is already expanded, collapse it and quit
+    if (content.classList.contains('show')) {
+    content.classList.remove('show');
+    return;
+    }
+
+    // Toggle our content
+    content.classList.toggle('show');
+})
+
+ // Type List - Products
+ $('.gridList').on('click', function(){
+  $('.typeList').removeClass('col-md-4');
+  $('.typeList').addClass('col-md-12');
+});
+
+$('.inlineList').on('click', function(){
+  $('.typeList').removeClass('col-md-12');
+  $('.typeList').addClass('col-md-4');
+});
+
+/*==================================================*/
+/*3.-Palet Color....................................*/
+/*==================================================*/
+
+var pallete = document.querySelectorAll('.circle-palet');
+for (var i = 0; i < pallete.length; i++) {
+  var value = pallete[i].getAttribute('data-color'); // = 9
+  pallete[i].style.backgroundColor = value;
+}
+
+/*==================================================*/
+/*4.-Palet Color....................................*/
+/*==================================================*/
+
+$('.fotorama').fotorama({
+  width: '100%',
+  height: '100%',
+  maxHeight: '550px',
+  ratio: 16/9,
+  allowfullscreen: true,
+  nav: 'thumbs',
+  navposition: 'top',
+  loop: 'true',
+  fit: 'contain',
+  thumbfit : 'cover',
+  fit : 'cover'
+});
+
+$('.fotorama2').fotorama({
+  width: '100%',
+  height: '80%',
+  allowfullscreen: true,
+  nav: 'thumbs',
+  navposition: 'top',
+  loop: 'true',
+  fit: 'contain',
+  thumbfit : 'cover',
+  fit : 'cover'
+});
+
+/*==================================================*/
+/*5.-Sidebar Mobile.................................*/
+/*==================================================*/
+
+$('.handlerSide2').on('click', function(){
+    $('.bgSidebar').toggleClass('open');
+});
+
+$('.close-btn').on('click', function(){
+  $('.bgSidebar').toggleClass('open');
 });

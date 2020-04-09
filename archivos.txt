@@ -17,7 +17,7 @@ comprarPlanetaCoins1.html               [[]]
 comprarPlanetaCoins2.html               [[]]
 comprarPlanetaCoins3.html               [[]]
 blog.html                               [[]]
-blog-detalle.html                       [[]]
+blog-detalle.html                       [[]] 
 
 NOTAS
 
