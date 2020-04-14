@@ -1856,8 +1856,7 @@ table tr {
   margin: 0px;
   text-transform: uppercase; }
 
-.tittle-separator h1:after {
-  left: -2em;
+.tittle-compra h1:after {
   margin-right: -51%; }
 
 .tittle-compra h1:after {
@@ -1889,3 +1888,160 @@ table tr {
 
 .bgContainer .list-group i {
   font-weight: 700; }
+
+.bgGray {
+  background-color: #F9FAFC; }
+
+.check-icon {
+  border: 1px solid #185289;
+  padding: 12px;
+  border-radius: 12px;
+  min-width: 180px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 20px; }
+  .check-icon p {
+    font-size: 16px !important; }
+  .check-icon i {
+    color: #185289;
+    font-size: 70px !important; }
+  .check-icon .content-icon {
+    padding-left: 30px; }
+  .check-icon .checkmark {
+    position: absolute;
+    top: 50px;
+    left: 12px; }
+  .check-icon input {
+    top: 50px; }
+
+.bgContainer .align-right {
+  text-align: right;
+  display: block; }
+
+.bgContainer textarea, .bgContainer input {
+  color: #5E5E5E;
+  margin: 10px 0px;
+  padding: 10px 10px; }
+
+.bgContainer .btn-secondary {
+  color: #185289;
+  border-radius: 30px;
+  border: 1px solid #185289 !important;
+  padding: 10px 20px; }
+
+.bgContainer .btn-secondary:hover {
+  color: #ffffff;
+  border: 1px solid #6B3891 !important;
+  background-color: #185289; }
+
+.bgContainer .btn-secondary:not(:disabled):not(.disabled).active {
+  background-color: #185289;
+  border: 1px solid #6B3891 !important; }
+
+.profile .topSidebar {
+  margin-top: -40px; }
+
+.profile .optionsStore {
+  padding: 10px 0px;
+  display: block; }
+  .profile .optionsStore a {
+    text-decoration: none;
+    padding: 8px 20px 8px 37px;
+    position: relative;
+    border-radius: 0px; }
+  .profile .optionsStore a.active {
+    background-color: #F9FAFC;
+    font-weight: bold; }
+    .profile .optionsStore a.active i {
+      font-weight: bold; }
+  .profile .optionsStore a:hover::after, .profile .optionsStore a.active::after {
+    background-color: #185289; }
+  .profile .optionsStore a::after {
+    content: " ";
+    display: block;
+    width: 5px;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    left: 0px;
+    bottom: 10px;
+    position: absolute; }
+  .profile .optionsStore i {
+    color: #185289;
+    font-size: 34px;
+    position: relative;
+    top: 4px;
+    margin-right: 13px; }
+
+.profile .product-image {
+  border-radius: 1rem;
+  height: 90px;
+  width: 90px; }
+
+.profile h4 {
+  color: #3D4042;
+  font-weight: bold;
+  font-weight: bold; }
+
+.profile h5 {
+  color: #3D4042;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 20px; }
+
+.profile .align-right {
+  text-align: right;
+  display: inline-block; }
+
+.table-style {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px 15px;
+  background-color: transparent; }
+  .table-style td {
+    padding: 0px 10px;
+    background-color: #ffffff;
+    color: #3D4042;
+    padding: .75rem 0.2rem;
+    height: 60px;
+    min-height: 60px; }
+  .table-style th {
+    color: #185289;
+    padding: .75rem 0rem;
+    font-weight: 500;
+    text-decoration: underline; }
+  .table-style td:first-child {
+    border-radius: 12px 0px 0px 12px; }
+  .table-style td:last-child {
+    border-radius: 0px 12px 12px 0px; }
+  .table-style tbody tr {
+    -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04); }
+
+.pedido-card h3 {
+  font-size: 20px; }
+
+.pedido-card h5 {
+  font-size: 15px; }
+
+.badge-purple {
+  color: #fff;
+  background-color: #563F99;
+  padding: 5px 15px; }
+
+.badge-blue {
+  color: #fff;
+  background-color: #185289;
+  padding: 5px 15px; }
+
+.top-right {
+  position: absolute;
+  top: 13px;
+  right: 33px; }
+
+.top-right-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 2px 8px !important; }

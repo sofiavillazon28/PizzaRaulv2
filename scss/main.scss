@@ -2234,8 +2234,8 @@ table tr{
   margin: 0px;  
   text-transform: uppercase;
 }
-.tittle-separator h1:after {
-  left: -2em;
+.tittle-compra h1:after {
+  // left: -2em;
   margin-right: -51%;
 }
 .tittle-compra h1:after{
@@ -2274,5 +2274,197 @@ table tr{
   i{
     font-weight: 700;
   }
+}
+.bgGray{
+  background-color: $lightGray;
+}
+
+.check-icon{
+  border: 1px solid $blue;
+  padding: 12px;
+  border-radius: 12px;
+  min-width: 180px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 20px;
+  p{
+    font-size: 16px!important;
+
+  }
+  i{
+    color: $blue;
+    font-size: 70px!important;
+  }
+  .content-icon{
+    padding-left: 30px;
+  }
+  .checkmark {
+      position: absolute;
+      top: 50px;
+      left:12px;
+  }
   
+  input {
+    top: 50px;
+  }
+}
+
+
+
+.bgContainer{
+    
+  .align-right{
+    text-align: right;
+    display: block;
+  }
+  textarea,input{
+    color: $darkGray;
+    margin: 10px 0px ;
+    padding: 10px 10px;
+  }
+  .btn-secondary {
+    color: $blue;
+    border-radius: 30px;
+    border: 1px solid $blue!important;
+    padding: 10px 20px;
+  }
+  .btn-secondary:hover {
+    color: $white;
+    border: 1px solid $darkPurple!important;
+    background-color: $blue;
+  }
+  .btn-secondary:not(:disabled):not(.disabled).active {
+    background-color: $blue;
+    border: 1px solid $darkPurple!important;
+  } 
+}
+
+.profile{
+  .topSidebar{
+    margin-top: -40px;
+  }
+  .optionsStore {
+    padding: 10px 0px;
+    display: block;
+    a{
+      text-decoration: none;
+      padding: 8px 20px 8px 37px;
+      position: relative;
+      border-radius: 0px;
+    }
+    a.active{
+      background-color: $lightGray;
+      font-weight: bold;
+      i{
+        font-weight: bold;
+      }
+    }
+    a:hover::after,a.active::after {
+      background-color: $blue;
+    }
+    a::after {
+      content: " ";
+      display: block;
+      width: 5px;
+      height: 35px;
+      background-color: $white;
+      border-radius: 2px;
+      left: 0px;
+      bottom: 10px;
+      position: absolute;
+    }
+    i {
+      color: #185289;
+      font-size: 34px;
+      position: relative;
+      top: 4px;
+      margin-right: 13px;
+    }
+  }
+  .product-image {
+    border-radius: 1rem;
+    height: 90px;
+    width: 90px;
+  }
+  h4{
+    color: $blackGray;
+    font-weight: bold;
+    font-weight: bold;
+  }
+  h5{
+    color: $blackGray;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+  .align-right{
+    text-align: right;
+    display: inline-block;
+  }
+}
+
+.table-style{
+  width: 100%;
+  border-collapse:separate;
+  // border-collapse: collapse;
+  border-spacing: 0px 15px;
+  background-color: transparent;
+  
+  td{
+    padding: 0px 10px;
+    background-color: $white;
+    color: $blackGray;
+    padding: .75rem 0.2rem;
+    height: 60px;
+    min-height: 60px;
+  }
+  th{
+    color: $blue;
+    padding: .75rem 0rem;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  td:first-child{
+    border-radius: 12px 0px 0px 12px;
+  }
+  td:last-child{
+    border-radius: 0px 12px 12px 0px;
+  }
+  tbody tr{
+    -webkit-box-shadow:  0 1px 15px rgba(0,0,0,.04), 0 1px 6px rgba(0,0,0,.04);
+    -moz-box-shadow:  0 1px 15px rgba(0,0,0,.04), 0 1px 6px rgba(0,0,0,.04);
+    box-shadow: 0 1px 15px rgba(0,0,0,.04), 0 1px 6px rgba(0,0,0,.04);
+    
+  }
+}
+// profile pedido
+.pedido-card{
+  h3{
+    font-size: 20px;
+  }
+  h5{
+    font-size: 15px;
+  }
+}
+
+.badge-purple {
+  color: #fff;
+  background-color: $lightPurple;
+  padding: 5px 15px;
+}
+.badge-blue {
+  color: #fff;
+  background-color: $blue;
+  padding: 5px 15px;
+}
+.top-right {
+  position: absolute;
+  top: 13px;
+  right: 33px;
+}
+.top-right-close{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 2px 8px!important;
 }

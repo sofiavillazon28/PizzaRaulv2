@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link  href="css/fotorama.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
-        
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-light fixed-top  ">
@@ -104,8 +103,7 @@
                         <div class="mapSitio ">
                             <ul>
                                 <li><a href="">Home</a></li>
-                                <li><a href="">Hombre</a></li>
-                                <li><a href="">Polos</a></li>
+                                <li><a href="">Detalle de compra</a></li>
                             </ul>    
                         </div>
                     </div>
@@ -113,11 +111,71 @@
            </div>
            <div class="row p-2">
                 <div class="col-md-9 info-detail">
+                    <!-- +++++++ formas de entrega -->
+                    <div class="tittle-compra">
+                        <h1>Formas de entrega</h1>
+                    </div>
+
+                    <div class="bgContainer my-4 ">
+                        <label class="form-group form-check check-icon">
+                            <p class="content-icon"><i class="icon-card1"></i></br>Delivery con </br> <strong>comercio planet</strong></p>
+                            <input class="radio" type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="form-group form-check check-icon">
+                            <p class="content-icon"><i class="icon-client"></i></br>Delivery con </br> <strong>el vendedor</strong></p>
+                            <input class="radio" type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <textarea class="col-md-12"  rows="4" cols="50" placeholder="Dirección de Envío..."></textarea>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-blue my-2 align-right"> Cambiar dirección</button>
+                        </div>
+                    </div>
+                    
+
+
+                    <!-- +++++++ Comprobante de pago -->
+
+                    <div class="tittle-compra">
+                        <h1>Comprobante de pagos</h1>
+                    </div>
+                    
+                    <div class="bgContainer my-4 ">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12 mb-2">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-secondary active">
+                                          <input type="radio" name="options" id="option1" autocomplete="off" checked> Sin Factura
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                          <input type="radio" name="options" id="option2" autocomplete="off"> Solicitar factura
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <input class="fullwd" type="text" placeholder="RUC" id="username" name="username"><br>
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="fullwd" type="text" placeholder="Razón social" id="pwd" name="pwd">
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="fullwd" type="text" placeholder="Dirección fiscal" id="pwd" name="pwd">
+                                </div>
+                            </div>    
+                            
+                        </form>
+                    </div>
+
+                    
+                    <!-- +++++++ Detalle de compra  -->
                     <div class="tittle-compra">
                         <h1>Detalle de compra</h1>
                     </div>
                     <!-- Elemento 01 -->
-                    <div class="bgContainer mt-4 pb-1">
+                    <div class="bgContainer my-4 pb-1">
                         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-top pt-1 pb-0 mb-3 ">
                             <div class="image-responsive product-image" style="background-image: url('images/default-light.jpg')"></div>
                             <div class="contentContainer">
@@ -142,89 +200,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Elemento 02 -->
-                    <div class="bgContainer mt-4 pb-1">
-                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-top pt-1 pb-0 mb-3 ">
-                            <div class="image-responsive product-image" style="background-image: url('images/default-light.jpg')"></div>
-                            <div class="contentContainer">
-                                <h6 class="blue">Producto 01 - Lorem ipsum dolor sit amet</h6>
-                                <p><strong>Vistos: 194    |   Vendidos 3</strong></p>
-                                <p>Marca: polito - Tienda: la tiendita</p>
-                            </div>
-                            <div class="info-detail ">
-                                <div class="pricingTab">
-                                    <i class="icon-money planetCoin"></i> <span class="planetCoin">64 Coins</span>
-                                    <h4 ><span class="prev-price">S/.258.20</span> S/.125.30</h4>
-                                </div>
-                                <div class="form-inline mt-2">
-                                    <label><strong>Cantidad: </strong> </label>
-                                    
-                                    <div class="custom-qty">
-                                      <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) & qty > 1 ) result.value--;return false;" class="reduced items" type="button">- </button>
-                                      <input type="text" class="input-text qty" title="Qty" value="1" maxlength="8" id="qty" name="qty">
-                                      <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items" type="button"> +</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Elemento 02 -->
-                    <div class="bgContainer mt-4 pb-1">
-                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-top pt-1 pb-0 mb-3 ">
-                            <div class="image-responsive product-image" style="background-image: url('images/default-light.jpg')"></div>
-                            <div class="contentContainer">
-                                <h6 class="blue">Producto 01 - Lorem ipsum dolor sit amet</h6>
-                                <p><strong>Vistos: 194    |   Vendidos 3</strong></p>
-                                <p>Marca: polito - Tienda: la tiendita</p>
-                            </div>
-                            <div class="info-detail ">
-                                <div class="pricingTab">
-                                    <i class="icon-money planetCoin"></i> <span class="planetCoin">64 Coins</span>
-                                    <h4 ><span class="prev-price">S/.258.20</span> S/.125.30</h4>
-                                </div>
-                                <div class="form-inline mt-2">
-                                    <label><strong>Cantidad: </strong> </label>
-                                    
-                                    <div class="custom-qty">
-                                      <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) & qty > 1 ) result.value--;return false;" class="reduced items" type="button">- </button>
-                                      <input type="text" class="input-text qty" title="Qty" value="1" maxlength="8" id="qty" name="qty">
-                                      <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items" type="button"> +</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Elemento 02 -->
-                    <div class="bgContainer mt-4 pb-1">
-                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-top pt-1 pb-0 mb-3 ">
-                            <div class="image-responsive product-image" style="background-image: url('images/default-light.jpg')"></div>
-                            <div class="contentContainer">
-                                <h6 class="blue">Producto 01 - Lorem ipsum dolor sit amet</h6>
-                                <p><strong>Vistos: 194    |   Vendidos 3</strong></p>
-                                <p>Marca: polito - Tienda: la tiendita</p>
-                            </div>
-                            <div class="info-detail ">
-                                <div class="pricingTab">
-                                    <i class="icon-money planetCoin"></i> <span class="planetCoin">64 Coins</span>
-                                    <h4 ><span class="prev-price">S/.258.20</span> S/.125.30</h4>
-                                </div>
-                                <div class="form-inline mt-2">
-                                    <label><strong>Cantidad: </strong> </label>
-                                    
-                                    <div class="custom-qty">
-                                      <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) & qty > 1 ) result.value--;return false;" class="reduced items" type="button">- </button>
-                                      <input type="text" class="input-text qty" title="Qty" value="1" maxlength="8" id="qty" name="qty">
-                                      <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items" type="button"> +</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
                 
                 <div class="col-md-3 info-detail">
@@ -232,6 +207,7 @@
                         <h1>Resumen de pedidos</h1>
                     </div>
                     <div class="bgContainer mt-4 ">
+                        <button class="btn btn-degraded2 mb-2 fullwd"> Finalizar compra</button>
                         <ul class="list-group mb-3">
                             <li class="list-group-item d-flex justify-content-between lh-condensed">
                               <div>
@@ -259,7 +235,7 @@
                               <span class="text-muted">80<i class="icon-money"></i> Coins</span>
                             </li>
                           </ul>
-                          <button class="btn btn-degraded mt-2 fullwd"> Completar pedido</button>
+                          
                     </div>
                 </div>
 
@@ -337,26 +313,7 @@
           <!--// Footer Copyright Area -->
         </footer>   
 
-        <!-- MODAL CARRO DE COMPRA-->
-        <div class="modal fade" id="seAgregoCarro" tabindex="-1" role="dialog" aria-labelledby="seAgregoCarroLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              
-              <div class="modal-body">
-                  <img src="images/buy-pluss.png" alt="">
-                  <div class="info-detail ">
-                    <h3><strong>Se agregó el producto</strong></br>
-                    a tu carro de compras
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <button class="btn btn-degraded mt-5"> Aceptar</button>
-
-                    </h3>
-                  </div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
+ 
 
         <script src="js/flickity.pkgd.min.js"></script>
         <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
