@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link  href="css/fotorama.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-red fixed-top">
+      <div class="row flex-nowrap justify-content-between align-items-center w-100 smPosition">
+        <div class="col-3 col-md-3 logoMobile">
+          <a class="navbar-brand hidden-900" href="index.html"><img class="logo"src="images/logo.png" alt=""></a>
+        </div>
+        <div class="form-inline col-12 col-md-9 d-flex justify-content-end align-items-center">
+          <div class="menusub">
+            <div class="iconBar">
+              <a href="perfil-favoritos.html" ><img class="svgheader-pizza" src="images/icons/pizza-white.svg" alt="">
+              <span class="counter">2</span></a>
+            </div>
+            <div class="iconMenu hidden-900 ">
+              <img class="svgheader white" src="images/icons/points.svg" alt="">
+              <ul class="bgWhite-simple optionsStore">
+                <li class="d-flex firstOp">
+                  <div class="respAvatar"><img src="images/store/img-avatar.png" alt=""></div>
+                  <h2 class="pb-2 pt-3">Perfil de Usuario</h2>
+                </li>
+                <li>
+                  <div class="separador light"></div>
+                </li>
+                <li>
+                  <a href="perfil-pedidos.html"><img class="ico-24" src="images/icons/user.svg" alt=""></i>Mi perfil</a>
+                </li>
+                <li>
+                  <a href="perfil-coins.html"><img class="ico-24" src="images/icons/shopping-bag.svg" alt="">Mis pedidos</a>
+                </li>
+                <li>
+                  <a href="perfil-favoritos.html"><img class="ico-24" src="images/icons/map-pin.svg" alt="">Mis direcciones</a>
+                </li>
+                <li>
+                  <a href="perfil-misDatos.html"><img class="ico-24" src="images/icons/alert.svg" alt="">Mis notificaciones</a>
+                </li>
+                <li>
+                  <a href="perfil-direccion.html"><img class="ico-24" src="images/icons/credit-card.svg" alt=""></i>Salir</a>
+                </li>
+                <li class="px-3 pb-3">
+                  <button class="btn btn-yellow2 text-center upp w-100" onclick="location.href='login.html'" type="button"> Salir</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main  profile">
+      <div class="row mx-0">
+        <div class="col-md-4 info-detail sidebarProfile">
+          <ul class="bgWhite-simple optionsStore topSidebar">
+            <li class="d-flex firstOp float-right mt-5 pr-4">
+              <h5 class="tittleProfile">Perfil de Usuario</h5>
+            </li>
+            <li>
+              <div class="separador light"></div>
+            </li>
+            <li>
+              <a href="perfil-pedidos.html">
+                Mi perfil
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.46073 15.4666C5.39601 14.5275 6.66454 14 7.98723 14H16.0128C17.3355 14 18.604 14.5275 19.5393 15.4666C20.4746 16.4056 21 17.6792 21 19.0072V21.0216C21 21.562 20.5637 22 20.0255 22C19.4874 22 19.0511 21.562 19.0511 21.0216V19.0072C19.0511 18.1982 18.731 17.4223 18.1612 16.8502C17.5914 16.2781 16.8186 15.9567 16.0128 15.9567H7.98723C7.18142 15.9567 6.40862 16.2781 5.83883 16.8502C5.26904 17.4223 4.94893 18.1982 4.94893 19.0072V21.0216C4.94893 21.562 4.51265 22 3.97446 22C3.43628 22 3 21.562 3 21.0216V19.0072C3 17.6792 3.52544 16.4056 4.46073 15.4666Z" fill="#B4AFA8"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.95392C10.3177 3.95392 8.95392 5.3177 8.95392 7C8.95392 8.6823 10.3177 10.0461 12 10.0461C13.6823 10.0461 15.0461 8.6823 15.0461 7C15.0461 5.3177 13.6823 3.95392 12 3.95392ZM7 7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7C17 9.76142 14.7614 12 12 12C9.23858 12 7 9.76142 7 7Z" fill="#B4AFA8"/>
+                </svg>
+              </a>
+            </li>
+            <li class="active">
+              <a href="perfil-coins.html">
+                Mis pedidos
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.2 1.4C5.38885 1.14819 5.68524 1 6 1H18C18.3148 1 18.6111 1.14819 18.8 1.4L21.8 5.4C21.9298 5.5731 22 5.78363 22 6V20C22 20.7957 21.6839 21.5587 21.1213 22.1213C20.5587 22.6839 19.7957 23 19 23H5C4.20435 23 3.44129 22.6839 2.87868 22.1213C2.31607 21.5587 2 20.7957 2 20V6C2 5.78363 2.07018 5.5731 2.2 5.4L5.2 1.4ZM6.5 3L4 6.33333V20C4 20.2652 4.10536 20.5196 4.29289 20.7071C4.48043 20.8946 4.73478 21 5 21H19C19.2652 21 19.5196 20.8946 19.7071 20.7071C19.8946 20.5196 20 20.2652 20 20V6.33333L17.5 3H6.5Z" fill="#B4AFA8"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z" fill="#B4AFA8"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 9C8.55228 9 9 9.44772 9 10C9 10.7956 9.31607 11.5587 9.87868 12.1213C10.4413 12.6839 11.2044 13 12 13C12.7956 13 13.5587 12.6839 14.1213 12.1213C14.6839 11.5587 15 10.7956 15 10C15 9.44772 15.4477 9 16 9C16.5523 9 17 9.44772 17 10C17 11.3261 16.4732 12.5979 15.5355 13.5355C14.5979 14.4732 13.3261 15 12 15C10.6739 15 9.40215 14.4732 8.46447 13.5355C7.52678 12.5979 7 11.3261 7 10C7 9.44772 7.44772 9 8 9Z" fill="#B4AFA8"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="perfil-favoritos.html">
+                Mis direcciones
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 4C9.77023 4 8.11492 4.67483 6.89729 5.87032C5.68028 7.06521 5 8.68188 5 10.3636C5 12.8184 6.63288 15.2316 8.46962 17.1352C9.36639 18.0646 10.2667 18.8261 10.944 19.3557C11.1539 19.5197 11.3415 19.6608 11.5 19.7772C11.6585 19.6608 11.8461 19.5197 12.056 19.3557C12.7333 18.8261 13.6336 18.0646 14.5304 17.1352C16.3671 15.2316 18 12.8184 18 10.3636C18 8.68188 17.3197 7.06521 16.1027 5.87032C14.8851 4.67483 13.2298 4 11.5 4ZM11.5 21C10.9523 21.8367 10.9521 21.8365 10.9518 21.8364L10.9492 21.8347L10.9434 21.8308L10.9237 21.8177C10.907 21.8066 10.8835 21.7908 10.8535 21.7704C10.7934 21.7296 10.7075 21.6703 10.5993 21.5936C10.3831 21.4403 10.0775 21.2168 9.7122 20.9313C8.9833 20.3614 8.00861 19.5377 7.03038 18.5239C5.11712 16.5411 3 13.6361 3 10.3636C3 8.13948 3.90008 6.01021 5.49611 4.44319C7.09152 2.87679 9.25152 2 11.5 2C13.7485 2 15.9085 2.87679 17.5039 4.44319C19.0999 6.01021 20 8.13948 20 10.3636C20 13.6361 17.8829 16.5411 15.9696 18.5239C14.9914 19.5377 14.0167 20.3614 13.2878 20.9313C12.9225 21.2168 12.6169 21.4403 12.4007 21.5936C12.2925 21.6703 12.2066 21.7296 12.1465 21.7704C12.1165 21.7908 12.093 21.8066 12.0763 21.8177L12.0566 21.8308L12.0508 21.8347L12.0489 21.8359C12.0486 21.8361 12.0477 21.8367 11.5 21ZM11.5 21L12.0477 21.8367C11.715 22.0544 11.2845 22.0541 10.9518 21.8364L11.5 21Z" fill="#B4AFA8"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 9C10.6716 9 10 9.67157 10 10.5C10 11.3284 10.6716 12 11.5 12C12.3284 12 13 11.3284 13 10.5C13 9.67157 12.3284 9 11.5 9ZM8 10.5C8 8.567 9.567 7 11.5 7C13.433 7 15 8.567 15 10.5C15 12.433 13.433 14 11.5 14C9.567 14 8 12.433 8 10.5Z" fill="#B4AFA8"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="perfil-misDatos.html">
+                Mis notificaciones
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.51885 3.93636C8.70733 2.69653 10.3192 2 12 2C13.6808 2 15.2927 2.69653 16.4811 3.93636C17.6696 5.1762 18.3373 6.85777 18.3373 8.61116C18.3373 11.6962 18.9696 13.6021 19.545 14.7026C19.8341 15.2555 20.1144 15.6159 20.3065 15.8275C20.4029 15.9336 20.4777 16.003 20.5214 16.0409C20.5432 16.0599 20.5573 16.071 20.5623 16.075C20.5625 16.0751 20.5626 16.0752 20.5627 16.0753C20.9243 16.3355 21.0842 16.8103 20.9565 17.2502C20.8273 17.6955 20.4338 18 19.9879 18H4.01213C3.56615 18 3.17274 17.6955 3.0435 17.2502C2.91584 16.8103 3.07568 16.3355 3.43727 16.0753C3.4374 16.0752 3.43754 16.0751 3.43769 16.075C3.44275 16.071 3.4568 16.0599 3.47864 16.0409C3.52228 16.003 3.59714 15.9336 3.69346 15.8275C3.88558 15.6159 4.16586 15.2555 4.45497 14.7026C5.03038 13.6021 5.6627 11.6962 5.6627 8.61116C5.6627 6.85777 6.33038 5.1762 7.51885 3.93636ZM6.13815 15.8884H17.8618C17.8306 15.8316 17.7993 15.7734 17.7681 15.7137C17.0122 14.268 16.3132 12.0074 16.3132 8.61116C16.3132 7.41779 15.8588 6.2733 15.0499 5.42947C14.241 4.58563 13.1439 4.11157 12 4.11157C10.8561 4.11157 9.75899 4.58563 8.95011 5.42947C8.14122 6.2733 7.6868 7.41779 7.6868 8.61116C7.6868 12.0074 6.98781 14.268 6.23191 15.7137C6.2007 15.7734 6.16943 15.8316 6.13815 15.8884Z" fill="#B4AFA8"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.49496 19.1411C9.9694 18.8518 10.5771 19.0216 10.8523 19.5202C10.9181 19.6395 11.0126 19.7385 11.1263 19.8073C11.24 19.8761 11.3688 19.9123 11.5 19.9123C11.6312 19.9123 11.76 19.8761 11.8737 19.8073C11.9874 19.7385 12.0819 19.6395 12.1477 19.5202C12.4229 19.0216 13.0306 18.8518 13.505 19.1411C13.9795 19.4304 14.141 20.0691 13.8658 20.5678C13.6253 21.0034 13.2803 21.365 12.8651 21.6163C12.4499 21.8677 11.9791 22 11.5 22C11.0209 22 10.5501 21.8677 10.1349 21.6163C9.71974 21.365 9.37465 21.0034 9.13423 20.5678C8.85902 20.0691 9.02052 19.4304 9.49496 19.1411Z" fill="#B4AFA8"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+                <a href="perfil-direccion.html">
+                  Cupones
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                    <path d="M3 5H21C21.5523 5 22 5.44771 22 6V9.17071C20.8348 9.58254 20 10.6938 20 12C20 13.3062 20.8348 14.4175 22 14.8293V18C22 18.5523 21.5523 19 21 19H3C2.44772 19 2 18.5523 2 18V14.8293C3.16519 14.4175 4 13.3062 4 12C4 10.6938 3.16519 9.58254 2 9.17071V6C2 5.44772 2.44772 5 3 5Z" stroke="#B4AFA8" stroke-width="2"/>
+                    <rect x="4" y="7" width="3" height="1" fill="#B4AFA8"/>
+                    <rect x="4" y="16" width="3" height="1" fill="#B4AFA8"/>
+                    <rect x="8" y="7" width="3" height="1" fill="#B4AFA8"/>
+                    <rect x="8" y="16" width="3" height="1" fill="#B4AFA8"/>
+                    <rect x="13" y="7" width="3" height="1" fill="#B4AFA8"/>
+                    <rect x="13" y="16" width="3" height="1" fill="#B4AFA8"/>
+                    <rect x="17" y="7" width="3" height="1" fill="#B4AFA8"/>
+                    <rect x="17" y="16" width="3" height="1" fill="#B4AFA8"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </a>
+              </li>
+          </ul>
+        </div>
+        <div class="align-items-end col-12 col-md-8 mb-5 info-detail contentProfile">
+          <div class="row">
+            <div class="col-12 col-md-10 pb-5">
+              <div class="d-flex justify-content-between align-items-top pt-5 px-0 pb-2 mb-3 reorder">
+                <div class="contentContainer">
+                  <h3>Mis direcciones</h3>
+                  <p>Selecciona tu dirección</p>
+                </div>
+                <div>
+                  <button class="btn btn-dark f-right mt-0 text-center upp" type="button"> Ver historial</button>
+                </div>
+              </div>
+              <div class="row">
+
+                  <div class="col-md-12 ml-3">
+                    <span class="number"><strong>PEDIDO N° 926266</strong></span>
+                    <div class="historialPedido pb-4 mt-0">
+                        <div class="d-block w-100">
+                            <div class="stateOrder">
+                                <ul>
+                                    <li class="active"><span class="number"></span><div class="text">Nuevo</div></li>
+                                    <li class="active"><span class="number"></span><div class="text">Recibido</div></li>
+                                    <li class="active"><span class="number"></span><div class="text">En camino</div></li>
+                                    <li class=""><span class="number"></span><div class="text">Entregado</div></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="Pedidoinfo">
+                                    <div class="anchoban">
+                                       
+                                        <div class="w-30">
+                                            <span class="red-text"><strong>Tu</strong> motorizado</span>
+                                            <div class="d-flex justify-content-start flex-wrap flex-md-nowrap align-items-center pt-0 px-0 mx-0 pb-2 mb-3  ">
+                                                <div class="image-responsive product-image rounded" style="background-image: url('images/store/img-avatar.png')"></div>
+                                                <div class="contentContainer">
+                                                    <p>José pueba</p>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="w-50 px-2 pt-3">
+                                            <h4 class="tittleHistorial"> El motorizado se encuentra en camino</h4>
+                                            <p>06:51 p.m.</p>
+                                        </div>
+                                        <div class="w-30 pt-3">
+                                            <a class="btn-map btn-dark float-right" href=""><img src="images/icons/map.svg" alt=""> <p>VER MAPA</p></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mt-4 ml-2 justify-content-between align-items-top bord-bottom">
+                                    <div>
+                                        <h6 class="mb-2 black-text"><strong>Forma </strong> de  Entrega </h6>
+                                    </div>
+                                    <div class="text-right">
+                                        <h4><strong>Delivery</strong></h4>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mt-4 ml-2 justify-content-between align-items-top bord-bottom">
+                                    <div>
+                                        <h6 class="mb-2 black-text"><strong>dirección   </strong> de  Entrega </h6>
+                                    </div>
+                                    <div class="text-right">
+                                        <h4><strong>Pasacar 373, Surquillo</strong></h4>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mt-4 ml-2 justify-content-between align-items-top bord-bottom">
+                                    <div>
+                                        <h6 class="mb-2 black-text"><strong>Detalle   </strong>de pedido </h6>
+                                    </div>
+                                    <div class="text-right">
+                                        <h4><strong>Hawaiana Familiar</strong></h4>
+                                    </div>
+                                </div>
+
+                                <div class="checkoutWhite ml-2 py-3 px-4 mt-3">
+                                    <div class="cardProduct d-flex justify-content-between  align-items-center pt-1 pb-0 mb-3 ">
+                                        <div class="custom-qty">
+                                          <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;qty > 1 ) result.value--;return false;" class="reduced items" type="button"><img src="images/icons/minus.svg" alt=""> </button>
+                                          <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items" type="button"><img src="images/icons/plus.svg" alt=""> </button>
+                                        </div>
+                                        <div class="image-prod" style="background-image: url('images/store/img-product-pizza.png')"></div>
+                                        <div class="textProd">
+                                          <h6>Mozarella Extra Cheese</h6>
+                                          <p>Extra queso, 4 Panes al ajo</p>
+                                        </div>
+                                        <div class="price">
+                                          <h6><strong>S/. 29. 90</strong></h6>
+                                          <p><input type="text" class="input-text qty" title="Qty" value="1" maxlength="8" id="qty" name="qty"> Unid.</p>
+                                        </div>
+                                    </div>
+                                    <div class="cardProduct d-flex justify-content-between  align-items-center pt-1 pb-0 mb-3 ">
+                                        <div class="custom-qty">
+                                          <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;qty > 1 ) result.value--;return false;" class="reduced items" type="button"><img src="images/icons/minus.svg" alt=""> </button>
+                                          <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items" type="button"><img src="images/icons/plus.svg" alt=""> </button>
+                                        </div>
+                                        <div class="image-prod" style="background-image: url('images/store/img-product-pizza.png')"></div>
+                                        <div class="textProd">
+                                          <h6>Mozarella Extra Cheese</h6>
+                                          <p>Extra queso, 4 Panes al ajo</p>
+                                        </div>
+                                        <div class="price">
+                                          <h6><strong>S/. 29. 90</strong></h6>
+                                          <p><input type="text" class="input-text qty" title="Qty" value="1" maxlength="8" id="qty" name="qty"> Unid.</p>
+                                        </div>
+                                    </div>
+        
+                                </div>
+
+                                <div class="d-flex mt-4 ml-2 justify-content-between align-items-top bord-bottom">
+                                    <div>
+                                        <h6 class="mb-2 black-text"><strong>Forma    </strong>de pago </h6>
+                                    </div>
+                                    <div class="text-right">
+                                        <h4><strong>Paga contra entrega</strong></h4>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mt-4 ml-2 justify-content-between align-items-top">
+                                    <div>
+                                        <h6 class="mb-2 black-text"><strong>Precio </strong>Total </h6>
+                                    </div>
+                                    <div class="text-right">
+                                        <h4><strong>S/.32.90</strong></h4>
+                                    </div>
+                                </div>
+
+                                  <!-- price -->
+                                  <div class="fottercheckout ">
+                                    <h6 class="px-0 pt-1"> <span class="float-right">Precio de entrega  S/.0.00</span></h6><br>
+                                    <h6 class="px-0 pt-1"> <span class="float-right">Precio de Pedido S/.32.90</span></h6><br>
+                                    <h6 class="px-0 pt-1"> <b class="float-right">Total  a pagar S/.32.900</b></h6><br>
+                                </div>
+
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- MODAL direccion-->
+    <div class="modal fade infoProducto" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="infoProductoLabel" aria-hidden="true">
+        <div class="modal-dialog bgGray " role="document">
+          <div class="modal-content">
+            <div class="modal-body modal-center">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="row p-1">
+                <div class="col-md-6 info-detail">
+                  <div class="typeList px-0 pb-3">
+                        <h4>Nueva dirección <span class="float-right"><a class="link" href="#">ver direcciones frecuentes</a></span></h4>
+  
+                        <form class="awesomeRaulForm detail col-12 pt-5">
+                          <div class="row">
+                            <div class="inputlight mt-0 col-12">
+                              <h6 class="mb-2 red-text">Información general</h6>
+                            </div>
+                            <div class="inputlight mt-1 col-12">
+                              <label>Dirección</label>
+                              <input type="text" required placeholder="Dirección (Calle / avenida/pasaje/jirón,número)"/>
+                            </div>
+                            <div class="inputlight mt-4 col-6">
+                              <label>Nro</label>
+                              <input type="text" required placeholder="Ingrese N°"/>
+                            </div>
+                            <div class="inputlight mt-4 col-6">
+                              <label>Distrito</label>
+                              <input type="text" required placeholder="Ingrese N°"/>
+                            </div>
+                            <div class="inputlight mt-4 col-12">
+                              <label>Título de la Dirección</label>
+                              <input type="text" required placeholder="Ingrese el nombre de la dirección"/>
+                            </div>
+  
+                            <div class="inputlight mt-4 col-12">
+                              <h6 class="mb-2 red-text">Complemente su dirección</h6>
+                            </div>
+                            
+                            <div class="inputlight mt-1 col-12 col-md-4">
+                              <label>Nro Piso/n°</label>
+                              <input type="text" required placeholder="Ingrese N°"/>
+                            </div>
+                            <div class="inputlight mt-1 col-12 col-md-4">
+                              <label>Manzana</label>
+                              <input type="text" required placeholder="Manzana"/>
+                            </div>
+                            <div class="inputlight mt-1 col-12 col-md-4">
+                              <label>Lote</label>
+                              <input type="text" required placeholder="Ingrese Lote"/>
+                            </div>
+                        
+                            <div class="inputlight mt-4 col-6">
+                              <label>Urbanización</label>
+                              <input type="text" required placeholder="Ingrese la urbanización"/>
+                            </div>
+                            <div class="inputlight mt-4 col-6">
+                              <label>Referencia</label>
+                              <input type="text" required placeholder="Ingrese la urbanización"/>
+                            </div>
+                          </div>
+                        </form>
+  
+                  </div>
+                </div>
+  
+                <div class="col-md-6 px-3 pt-2">
+                  <div class="map-address">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386950.6511603643!2d-73.70231446529533!3d40.738882125234106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva+York!5e0!3m2!1ses-419!2sus!4v1445032011908" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+  
+                  <div class="d-flex mt-4">
+                    <button class="btn btn-dark f-right mt-4 w-100 mr-2 text-center upp" onclick="location.href='home.html'" type="button"> cancelar</button>
+                    <button class="btn btn-yellow2 f-right mt-4 w-100 mr-2 text-center upp" onclick="location.href='home.html'" type="button"> aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

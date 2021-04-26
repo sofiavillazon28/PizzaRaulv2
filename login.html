@@ -3,33 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planeta Ecommerce</title>
+    <title>Login</title>
     <link rel="stylesheet" href="css/bootstrap.css"></head>
     <link rel="stylesheet" href="css/main.css"></head>
 </head>
 <body>
     <div class="logoForm">
-        <img src="images/logo.png" alt="">
+        <img src="images/store/img-logo.png" alt="">
     </div>
-    <div class="bgAwesome">
-        <form class="awesomePlanetForm col-12 col-sm-5 col-md-4 bgWhite">
-            <button class="btn btn-facebook"> <i class="icon-facebook"></i>Iniciar con Facebook</button>
-            <div class="separador"></div>
-            <div class="tittleForm">
-                <span>o ingresa con tu usuario planeta</span>
-                <h1>Iniciar Ususario</h1>
+    <div class="bgAwesome d-flex">
+        <form class="awesomeRaulForm col-11 col-sm-5 col-md-4 bgWhite py-5">
+            <div class="back">
+                <a href="login.html" class="btn-arrow"><img src="images/icons/arrow-left.svg" alt=""></a><strong>Regresar</strong>
             </div>
-            <div class="inputlight">
-                <input type="text" required/>
-                <label>Usuarios</label>
+
+            <div class="tittleForm pt-4 pb-4">
+                <h1>Login</h1>
+                <span>Seleccione una opcion</span>
             </div>
-            <div class="inputlight">
-                <input type="password" required/>
-                <label>Contraseña</label>
+
+            <div class="">
+                <button class="btn btn-facebook mt-4 upp"> <img src="images/icons/facebook2.svg" alt="">Ingrese con Facebook</button>
+                <button class="btn btn-dark mt-4 w-100 upp"> <img class="ml-2" src="images/icons/phone.svg" alt="">Ingrese con Celular</button>
+                <button class="btn btn-red mt-4 w-100 upp"> <img src="images/icons/mail.svg" alt="">Ingrese con Email</button>
+           
             </div>
-            <a class="linkBlue f-right mt-4" href="registro.html">¿No tienes usuario? Crea uno</a>
-            <a class="linkPurple f-right" href="">Olvidé mi contraseña</a>
-            <button class="btn btn-degraded f-right mt-4" onclick="location.href='home.html'" type="button"> Entrar</button>
         </form>
     </div>
 </body>
