@@ -806,17 +806,41 @@ textarea:focus, input:focus{
  display: block;
  position: relative;
  margin-top: 0px;
+ margin-bottom: 0px;
  z-index: 2;
  pointer-events: none;
  font-size: 16px;
  line-height: 16px;
  color: #3B444D;
 }
+.awesomeRaulForm .inputlight input{
+  appearance: none;
+  background-color: none;
+  border-bottom: 1px solid #828282;
+  border-top: 0px solid $red2;
+  border-right: 0px solid $red2;
+  border-left: 0px solid $red2;
+  line-height: 0;
+  font-size: 17px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 0px;
+  border-radius: 0px;
+  color: $gray;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+  color: $black2 !important;
+ }
+ .awesomeRaulForm .inputlight select{
+   outline: none;
+ }
 
-.awesomeRaulForm .inputlight input {
- appearance: none;
+.awesomeRaulForm .inputlight select{
  background-color: none;
- border-bottom: 1px solid #828282;;
+ border-bottom: 1px solid #828282;
  border-top: 0px solid $red2;
  border-right: 0px solid $red2;
  border-left: 0px solid $red2;
@@ -825,7 +849,7 @@ textarea:focus, input:focus{
  width: 100%;
  display: block;
  box-sizing: border-box;
- padding: 10px 0px;
+ padding: 4px 0px;
  border-radius: 0px;
  color: $gray;
  font-weight: 100;
@@ -1003,7 +1027,7 @@ textarea:focus, input:focus{
 .iconMenu:hover .optionsStore{
   display: block;
   position: absolute;
-  right: -12px;
+  right: 18px;
   padding-left: 0px ;
 }
 .row.prod{
@@ -1110,11 +1134,16 @@ textarea:focus, input:focus{
 }
 
 .promo-banner {
-  width: 100%;
+  width:  100%;
   align-items: center;
   vertical-align: center;
   display: inline-flex !important;
   justify-content: center !important;
+}
+#map{
+  .modal-dialog{
+    min-width: 60%!important;
+  }
 }
 #map .info-detail.addres{
   border-right: none;
@@ -1131,11 +1160,13 @@ textarea:focus, input:focus{
   border: 1px solid #D5DAE1!important;
 }
 .infoProducto{
+
   .info-detail{
     border-right: 1px solid $gray;
     h4{
-      font-size: 23px;
+      font-size:  23px;
       line-height: 26px;
+      color: $black2;
       color: $black2;
     }
   }
@@ -1632,7 +1663,7 @@ footer{
 }
 @media (max-width: 767px){
   .logoMobile {
-    position: absolute;
+    // position: absolute;
     margin-top: 10px!important;
   }
   .navbar .logo {
@@ -1656,7 +1687,9 @@ footer{
 }
 
 @media (max-width: 1024px){
-  
+  .text-call{
+    display: none;
+  }
 .Pedidoinfo{
   width: 100%;
   .anchoban{
@@ -2689,18 +2722,23 @@ table tr{
 
 // modal info
 #modalForm .modal-dialog {
-  max-width: 75%;
-  .modal-body{
-    // padding:0px
-  }
+  max-width: 77%;
   .modal-content{
     text-align: left;
   }
 }
 .infoProducto .modal-dialog {
   text-align: left;
-  max-width: 60%;
-  min-height: auto!important;
+  max-width: 80%;
+  .modal-content{
+    position: relative;
+    .modal-footer{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
   .modal-content{
     padding-top: 20px;
   }
@@ -3025,7 +3063,19 @@ table tr{
     border-radius: 0px;
   }
 }
+.small-text{
+  font-size: 12px!important;
+  padding: 3px 10px!important;
+}
+.info-small-text{
+  font-weight: 400px !important;
+  font-size: 22px !important;
+  margin-top: 20px!important;
+  color: #707070!important;
+  margin-top: 20px!important;
+}
 
+ 
 .bgContainer .product-image-blog {
   width: 100px;
   height: 60px;
@@ -3323,7 +3373,7 @@ table tr{
   }
 }
 .scrollCart{
-  height: calc(100vh - 276px);
+  height: calc(100vh - 296px);
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
@@ -3568,5 +3618,41 @@ table tr{
   
   li:first-child:before{
     display: none;
+  }
+}
+
+
+.text-call{
+  padding-top: 5px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 15px;
+  margin-left: 15px;
+  h1{
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+  }
+}
+
+.containerMobile{
+  .text-mobile-text{
+    img{
+      height: 50px;
+    }
+    h2{
+      font-size: 45px;
+      line-height: 40px;
+      color: $black1 !important;
+    }
+    p{
+      color: $black2;
+      font-size: 18px;
+    }
+  }
+  .text-mobile{
+    img{
+      width: 100%;
+    }
   }
 }

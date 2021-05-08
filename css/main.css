@@ -695,6 +695,7 @@ textarea:focus, input:focus {
   display: block;
   position: relative;
   margin-top: 0px;
+  margin-bottom: 0px;
   z-index: 2;
   pointer-events: none;
   font-size: 16px;
@@ -714,6 +715,29 @@ textarea:focus, input:focus {
   display: block;
   box-sizing: border-box;
   padding: 10px 0px;
+  border-radius: 0px;
+  color: #B4AFA8;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+  color: #3B444D !important; }
+
+.awesomeRaulForm .inputlight select {
+  outline: none; }
+
+.awesomeRaulForm .inputlight select {
+  background-color: none;
+  border-bottom: 1px solid #828282;
+  border-top: 0px solid #BD1218;
+  border-right: 0px solid #BD1218;
+  border-left: 0px solid #BD1218;
+  line-height: 0;
+  font-size: 17px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 4px 0px;
   border-radius: 0px;
   color: #B4AFA8;
   font-weight: 100;
@@ -858,7 +882,7 @@ textarea:focus, input:focus {
 .iconMenu:hover .optionsStore {
   display: block;
   position: absolute;
-  right: -12px;
+  right: 18px;
   padding-left: 0px; }
 
 .row.prod {
@@ -953,6 +977,9 @@ textarea:focus, input:focus {
   display: inline-flex !important;
   justify-content: center !important; }
 
+#map .modal-dialog {
+  min-width: 60% !important; }
+
 #map .info-detail.addres {
   border-right: none; }
 
@@ -971,6 +998,7 @@ textarea:focus, input:focus {
   .infoProducto .info-detail h4 {
     font-size: 23px;
     line-height: 26px;
+    color: #3B444D;
     color: #3B444D; }
 
 #mensaje {
@@ -1373,7 +1401,6 @@ footer {
 
 @media (max-width: 767px) {
   .logoMobile {
-    position: absolute;
     margin-top: 10px !important; }
   .navbar .logo {
     margin-left: 10px; } }
@@ -1390,6 +1417,8 @@ footer {
     margin-top: 75px !important; }
 
 @media (max-width: 1024px) {
+  .text-call {
+    display: none; }
   .Pedidoinfo {
     width: 100%; }
     .Pedidoinfo .anchoban {
@@ -2188,14 +2217,19 @@ table tr {
   opacity: 0.8; }
 
 #modalForm .modal-dialog {
-  max-width: 75%; }
+  max-width: 77%; }
   #modalForm .modal-dialog .modal-content {
     text-align: left; }
 
 .infoProducto .modal-dialog {
   text-align: left;
-  max-width: 60%;
-  min-height: auto !important; }
+  max-width: 80%; }
+  .infoProducto .modal-dialog .modal-content {
+    position: relative; }
+    .infoProducto .modal-dialog .modal-content .modal-footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%; }
   .infoProducto .modal-dialog .modal-content {
     padding-top: 20px; }
   .infoProducto .modal-dialog .modal-footer {
@@ -2455,6 +2489,17 @@ table tr {
     height: 100px;
     border-radius: 0px; }
 
+.small-text {
+  font-size: 12px !important;
+  padding: 3px 10px !important; }
+
+.info-small-text {
+  font-weight: 400px !important;
+  font-size: 22px !important;
+  margin-top: 20px !important;
+  color: #707070 !important;
+  margin-top: 20px !important; }
+
 .bgContainer .product-image-blog {
   width: 100px;
   height: 60px;
@@ -2699,7 +2744,7 @@ table tr {
     color: #8695A4; }
 
 .scrollCart {
-  height: calc(100vh - 276px);
+  height: calc(100vh - 296px);
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden; }
@@ -2900,3 +2945,29 @@ table tr {
     background-color: #BD1218; }
   .stateOrder li:first-child:before {
     display: none; }
+
+.text-call {
+  padding-top: 5px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 15px;
+  margin-left: 15px; }
+  .text-call h1 {
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-bottom: 0px; }
+
+.containerMobile .text-mobile-text img {
+  height: 50px; }
+
+.containerMobile .text-mobile-text h2 {
+  font-size: 45px;
+  line-height: 40px;
+  color: #000000 !important; }
+
+.containerMobile .text-mobile-text p {
+  color: #3B444D;
+  font-size: 18px; }
+
+.containerMobile .text-mobile img {
+  width: 100%; }
